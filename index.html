@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #bc1aa1;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Personal Website</h1>
+  <p>A website about myself..</p>
+</div>
+
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg"><img src="img/me.jpg" alt="my picture" width="60" height="80"></div>
+    <p>RICZHELL ANAFFY CALISING.</p>
+    <p>NOVEMBER 13, 2004 </p>
+    <p> BAGUMBAYAN, TAGUIG CITY</p>
+    <h3>PHOTOS</h3>
+    <div class="fakeimg"><img src="img/child.jpg" alt="my picture" width="100" height="180"></div>
+    <div class="fakeimg"><img src="img/BORA.jpg" alt="my picture" width="100" height="180"></div>
+    <div class="fakeimg"><img src="img/ojt.jpg" alt="my picture" width="100" height="180"></div>
+  </div>
+  <div class="main">
+    <h2>ABOUT  MYSELF</h2>
+    <h5>This website is about myself</h5>
+    <p>My name is Riczhell Anaffy Calising. I live in Bagumbayan Taguig City. 20years old. I am currently a third-year student pursuing a Bachelor of Science in Information Technology at Pateros Technological College. I love to play mobile games like Call of Duty and Mobile Legends. I also know how to play Badminton and I also know how to swim. I love to watch Kdrama movies. I studied at CP Sta Teresa Elementary School when I was in Elementary, Bagumbayan National High School when I was in Junior and Senior High School. Let me show you some photos of my family and some picture that aree memorable for me. </p>
+    <br>
+    <h2>PHOTOS</h2>
+    <h5>This is my family.</h5>
+    <div class="fakeimg"><img src="img/fam.jpg" alt="my picture" width="150" height="200"></div>
+    <div class="fakeimg"><img src="img/fam2.jpg" alt="my picture" width="150" height="200"></div>
+    <div class="fakeimg"><img src="img/fam3.jpg" alt="my picture" width="150" height="200"></div>
+    <h2>RANDOM PHOTOS<h2>
+    <div class="fakeimg"><img src="img/puka.jpg" alt="my picture" width="150" height="200"></div>
+    <div class="fakeimg"><img src="img/boraa.jpg" alt="my picture" width="150" height="200"></div>
+    <div class="fakeimg"><img src="img/4 2.jpg" alt="my picture" width="150" height="200"></div>
+    <div class="fakeimg"><img src="img/brcy.jpg" alt="my picture" width="150" height="200"></div>
+
+
+    <p>This are some pictures that I can show which seems to be an important photo to me.</p>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
